@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Product Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Products Section -->
+    <div class="products">
+      <h3>Products</h3>
+      <div class="product" data-id="1" data-price="100">
+        <span>Product-1</span>
+        <span>100</span>
+        <div class="btn">
+          <button class="decrement">-</button>
+          <span class="quantity">0</span>
+          <button class="increment">+</button>
+        </div>
+      </div>
+      <div class="product" data-id="2" data-price="200">
+        <span>Product-2</span>
+        <span>200</span>
+        <div class="btn">
+          <button class="decrement">-</button>
+          <span class="quantity">0</span>
+          <button class="increment">+</button>
+        </div>
+      </div>
+      <div class="product" data-id="3" data-price="300">
+        <span>Product-3</span>
+        <span>300</span>
+        <div class="btn">
+          <button class="decrement">-</button>
+          <span class="quantity">0</span>
+          <button class="increment">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+      <h3>Cart</h3>
+      <div class="cart-items">
+        <p>No Product added to the cart</p>
+      </div>
+      <div class="total">
+        <strong>Total:</strong> <strong><span id="total-price">0</span></strong>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
